@@ -1,0 +1,153 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffcc33, #ff66cc);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.message-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.message-box {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 400px;
+}
+
+#message {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#newGameButton {
+    background-color: #007BFF;
+}
+
+#newGameButton:hover {
+    background-color: #0056b3;
+}
+
+#exitGameButton {
+    background-color: #DC3545;
+}
+
+#exitGameButton:hover {
+    background-color: #C82333;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 400px;
+}
+
+.symbol-button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.symbol-button[data-symbol="X"] {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.symbol-button[data-symbol="X"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.symbol-button[data-symbol="O"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.symbol-button[data-symbol="O"]:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}

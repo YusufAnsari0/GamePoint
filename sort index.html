@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Sorting Game</title>
+    <link rel="stylesheet" href="sort styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Number Sorting Game</h1>
+        <div class="box" id="numbersBox">
+            <!-- Numbers will be generated here by JavaScript -->
+        </div>
+        <button class="action-button" onclick="checkOrder()">Check Order</button>
+        <button class="action-button" onclick="resetGame()">Try Again</button>
+        <p id="result"></p>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>You Win!</p> <br> For you By - <br> Yusuf Ansari 
+        </div>
+    </div>
+
+    <script src="sort script.js"></script>
+</body>
+</html>

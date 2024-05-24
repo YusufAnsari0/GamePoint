@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock paper sisscor styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <button id="instructionButton" onclick="showInstructionPopup()">How to Play</button>
+        <div id="instructionPopup" class="popup hidden">
+            <div class="instruction-box">
+                <h2>Instructions</h2>
+                <p>Welcome to Rock Paper Scissors!</p>
+                <p>This is a simple game where you choose between rock, paper, or scissors.</p>
+                <p>Rock beats scissors, scissors beats paper, and paper beats rock.</p>
+                <p>The first player to win 3 rounds or reach 3 draws wins the game.</p>
+                <p>Click on any of the buttons below to make your choice.</p>
+                <button onclick="closeInstructionPopup()">Got it!</button>
+            </div>
+        </div>
+        <div class="game">
+            <div class="scoreboard">
+                <div class="score">Player: <span id="playerScore">0</span></div>
+                <div class="score">Computer: <span id="computerScore">0</span></div>
+            </div>
+            <div class="choices">
+                <button class="rock" data-choice="rock">Rock</button>
+                <button class="paper" data-choice="paper">Paper</button>
+                <button class="scissors" data-choice="scissors">Scissors</button>
+            </div>
+            <div id="result" class="result"></div>
+        </div>
+        <button onclick="restart()">Restart</button><br><br>
+    </div>
+    <div id="outcomeScreen" class="hidden">
+        <div class="popup">
+            <h2 id="popupMessage"></h2>
+            <p>Player Wins: <span id="playerWins">0</span></p>
+            <p>Draws: <span id="draws">0</span></p>
+            <button onclick="restart()">Play Again</button><br><br> For you By - <br> Yusuf Ansari 
+        </div>
+    </div>
+    <script src="rock paper sisscor script.js"></script>
+    <div class="credits"></div>
+    <div class="closing-message"></div>
+</body>
+</html>

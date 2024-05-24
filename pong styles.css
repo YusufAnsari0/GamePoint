@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+canvas {
+    border: 2px solid #fff;
+    background-color: #000;
+}
+
+#scoreBoard {
+    color: #fff;
+    font-size: 32px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+#messageBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px 50px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+#messageBox p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#messageBox button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#messageBox button:hover {
+    background-color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
